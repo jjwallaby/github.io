@@ -1,0 +1,30 @@
+<h1 id="stockmlrn">StockMLRN</h1>
+<p>StockMLRN is react-native app implementing forecasting top 18 stocks on SGX
+Singapore Stock Exchange using 5 various Time-Series forecasting models.</p>
+<p>Important to note, there is <strong>no tool or model that can predict the
+future</strong>, but more probability scenario given past historical prices.</p>
+<p>There are many models and business in the industry forecasting stock
+prices.  This is purely for experimental.</p>
+<h2 id="models">Models</h2>
+<h3 id="arima">ARIMA</h3>
+<p>ARIMA is text book standard Time-Series forecasting.  It stands for
+<strong>Autoregressive integrated moving average</strong>.  Clearly Stock generally
+does not follow any cycle pattern.  Meaning it does not have seasonality.</p>
+<p>The model is conservative, will score well with low volatility. As seen
+for the SGX stocks it does score the highest in forecasting accuracy.</p>
+<h3 id="mssa">mSSA</h3>
+<p>mSSA <strong>multivariate Singular Spectrum Analysis</strong> model was used from
+the repository is the implementation of the <a href="https://arxiv.org/abs/2006.13448">paper: On Multivariate Singular Spectrum Analysis</a>. Refer to the paper for more information about the theory and the algorithm of mSSA.  MIT.</p>
+<p>It is does well with more multi variables, just besides the single stock.
+You could bring in Stock Market daily averages and volatility to produce
+better forecasting model.  But for simplicity I just used the stock price.</p>
+<h3 id="facebook-prophet">Facebook Prophet</h3>
+<p>This is now available for public use and produced by Facebook.
+The model performs the lowest score, this is due to the fact
+that model is more geared to predict the new trends.
+Trend is your friend.</p>
+<h3 id="lstm">LSTM</h3>
+<p>LSTM Long short-term memory is a model using neural networks deep learning techniques e.g. nearest neighbour and is uses technical of graph theorems.</p>
+<p>This is the most complex model.</p>
+<h2 id="about-the-developer">About the Developer</h2>
+<p>Justin Woodhead is Implementation/Integration Specialist in the Finance sector.<br>Can be reached on in Linked-In  <a href="https://www.linkedin.com/in/justin-woodhead/">https://www.linkedin.com/in/justin-woodhead/</a></p>
